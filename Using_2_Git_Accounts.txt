@@ -32,3 +32,6 @@
 
    $ git config --global user.name
    extpnr
+
+6. Set remote URL for existing (work) email etc.
+   git remote set-url origin ssh://git@work:7999/ecc/ecc.git
