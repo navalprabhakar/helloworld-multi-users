@@ -12,10 +12,10 @@
    }
 
 3. Clone work
-   git clone ssh://git@work:7999/ecc/ecc.git
+   git clone ssh://git@work:9999/ecc/ecc.git
    {
     Host work
-    HostName vviestash01
+    HostName workhostname
 	User git
     IdentityFile ~/.ssh/id_rsa
    }
@@ -23,7 +23,7 @@
 4. Please note that port number is used in clone command but not in config file.
 
 5. To set global/local user on git repo/global use below-
-   git config --global user.name "extpnr"
+   git config --global user.name "extworkname"
    git config --local user.email "navalnnnn@nnn.com"
    git config --local user.name "navalprabhakar"
    
@@ -34,4 +34,4 @@
    extpnr
 
 6. Set remote URL for existing (work) email etc.
-   git remote set-url origin ssh://git@work:7999/ecc/ecc.git
+   git remote set-url origin ssh://git@work:9999/ecc/ecc.git
