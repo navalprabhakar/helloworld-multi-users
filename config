@@ -4,6 +4,6 @@ Host personal
     IdentityFile ~/.ssh/id_navalprabhakar_gmail_rsa
 
 Host work
-    HostName vviestash01
+    HostName workhostname
 	User git
     IdentityFile ~/.ssh/id_rsa
