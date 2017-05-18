@@ -1,0 +1,34 @@
+1. Put in .ssh in user folder on windows: 'config' file.
+
+2. Clone personal:
+   git clone ssh://git@personal:navalprabhakar/helloworld-multi-users.git
+
+   where personal is mapped to (in config file)
+   {
+    Host personal
+    Hostname github.com
+    User git
+    IdentityFile ~/.ssh/id_navalprabhakar_gmail_rsa
+   }
+
+3. Clone work
+   git clone ssh://git@work:7999/ecc/ecc.git
+   {
+    Host work
+    HostName vviestash01
+	User git
+    IdentityFile ~/.ssh/id_rsa
+   }
+
+4. Please note that port number is used in clone command but not in config file.
+
+5. To set global/local user on git repo/global use below-
+   git config --global user.name "extpnr"
+   git config --local user.email "navalnnnn@nnn.com"
+   git config --local user.name "navalprabhakar"
+   
+   $ git config --local user.name
+   navalprabhakar
+
+   $ git config --global user.name
+   extpnr
