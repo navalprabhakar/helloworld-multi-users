@@ -2,3 +2,7 @@ Hello World:
 Multiple Git Users Commit
 Successfully cloned the project from github with config host as "personal" and command-
 git clone git@personal:navalprabhakar/helloworld-multi-users.git
+
+Now commit 2 with setting local user/email for current repository:
+ git config --local user.name "navalprabhakar"
+  git config --local user.email "navalprabhakar@gmail.com"
