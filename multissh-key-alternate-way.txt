@@ -1,0 +1,30 @@
+Alternative Way:
+
+1. Add 2 rsa id keys.
+ssh-keygen -t rsa -b 4096 -C “your_email@example.com”
+OR
+ssh-keygen -t rsa -C “your_email2@example.com”
+
+2. Run command:
+  eval "$(ssh-agent -s)"
+
+3. And:
+  ssh-add ~/.ssh/id_rsa_personal
+  ssh-add ~/.ssh/id_rsa
+
+file ~.ssh/config
+
+Host nvl.github.com
+HostName github.com
+PreferredAuthentications publickey
+IdentityFile ~/.ssh/id_rsa_personal
+
+Host github.com
+HostName github.com
+PreferredAuthentications publickey
+IdentityFile ~/.ssh/id_rsa
+
+// uses standard SSH key
+git clone git@github.com:CDRussell/SurvivingPresenters.git
+// uses personal SSH key
+git clone git@nvl.github.com:CDRussell/SurvivingPresenters.git
